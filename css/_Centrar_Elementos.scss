@@ -1,0 +1,75 @@
+@mixin centrarElementos(){
+
+}
+@mixin center_box_position_son(){
+    //father postion relative
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+@mixin center_box_father(){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin center_text_father(){
+    text-align:center
+}
+@mixin center_text_son($hei){
+    line-height:$hei;
+}
+@mixin center_box_negative_margin_son($margin_top,$margin_left){
+        position:absolute;
+        left:50%;
+        top:50%;
+        margin:-$margin_top 0 0 -$margin_left;
+}
+/*
+####con flexbox
+padre{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+####centrar vertical y horizontalmente un texto
+
+padre{
+    text-align:center; lo hace horizontallmente 
+}
+hijo{
+    line-height:"x"px;
+}
+####centrar vertical y horizontalmente una imagen con transform
+se puede alinear tanto vertical como horizontalmetne imagenes 
+y contenedores. no es valido para textos ya que no tiene en ceunta el tamaño de la letra
+padre{
+    position:relative;
+}
+hijo{
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-50%);
+}
+####centrar vertical y horizontalemtne con margenes negativos
+padre{
+    position:relative;
+}
+hijo{
+    position:absolute;
+    left:50%;
+    top:50%;
+    margin:-25px 0 0 -25px;ej.
+            el top se saca dividiendo entre 2 el higth
+            el left o rigth se saca dividiendo entre 2 el width
+}
+####centrar un div utilizando margin auto
+padre{
+}
+hijo{
+    margin:0 auto;
+}
+
+
+*/

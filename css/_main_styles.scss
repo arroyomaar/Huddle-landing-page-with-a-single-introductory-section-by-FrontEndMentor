@@ -1,0 +1,14 @@
+@import 'reinicio','body','width&heigth','Centrar_Elementos';
+
+$cyan:hsl(179, 62%, 43%);
+$bright_Yellow: hsl(71, 73%, 54%);
+$light_Gray: hsl(204, 43%, 93%);
+$grayish_Blue: hsl(218, 22%, 67%);
+
+*{
+    @include reinicio_navegador();
+}
+body{
+    @include body_configuracion('Karla',16px,400);
+}
+  

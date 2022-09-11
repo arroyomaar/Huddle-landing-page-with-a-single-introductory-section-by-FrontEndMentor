@@ -1,0 +1,33 @@
+@mixin body_configuracion($tipografia,$font_size,$font_weigth){
+    body{
+        height: 100%;
+        width: 100%;
+        font-family: $tipografia, sans-serif;
+        font-size: $font_size;
+        font-weight: $font_weigth;
+    }    
+}
+
+@mixin hover_svg($hue_color) {
+    // el padre que contiene a los iconos es socials y le doy estas propiedaddes
+    //  display: flex;
+    //     flex-direction: row;
+    //     justify-content: center;
+
+    //a las images que contiene esta caja le doy las medidas 
+    //     width: 25px;
+    //     height: auto;
+    //     margin: 2rem 0.5rem;
+
+    //este es el formato
+
+    //<section class="socials">
+    //  <a href="#" class="socialicons"><img src="./images/Facebook F.svg" alt="facebook icon" class="filter-green"></a>
+    //  <a href="#" class="socialicons"><img src="./images/twitter.png" alt="facebook icon" class="filter-green"></a>
+    //  <a href="#" class="socialicons"><img src="./images/instagram.png" alt="facebook icon" class="filter-green"></a>
+    //</section>
+
+    // y a esta clase le doy el :hover
+    // .socialicons:hover .filter-green{
+    filter: invert(60%)sepia(93%) saturate(349%)hue-rotate($hue_color deg)brightness(130%)contrast(85%);
+}

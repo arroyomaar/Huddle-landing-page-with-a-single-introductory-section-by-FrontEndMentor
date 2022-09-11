@@ -1,0 +1,5 @@
+@mixin with_heigth($width,$height,$border-radius){
+    width: $width;
+    height: $height;
+    border-radius: $border-radius;
+}
